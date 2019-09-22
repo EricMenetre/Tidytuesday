@@ -134,7 +134,7 @@ plot.corrected <- park_visits_mini %>%
 
 plot.merge <- ggarrange(plot.uncorrected, plot.corrected)
 plot.confound <- annotate_figure(plot.merge, 
-                top = "Relationship between gas prices and number of visitors")
+                top = "Relationship between gas prices and number of visitors: effect of inflation")
 
 
 ```
@@ -143,4 +143,7 @@ plot.confound <- annotate_figure(plot.merge,
 plot.confound
 ```
 
+According to this last plot, on the left side, gas prices do not take into account the inflation. If the interpretation is based only on these values, we conclude that the more people pay for gas price, the most they are visiting National Parks. When the inflation factor is taken into account, the tendency is reversed. 
+
+since both data are not normally distributed the log of each value has been chosen.
 
